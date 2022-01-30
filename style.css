@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    margin: 0px;
+}
+
+body{
+    background: black;
+    margin: 0 auto;
+    width: 200px; 
+    margin-top: 50px;
+    padding: 0%;
+}
+
+div.container {
+    font: 1.5em montserrat;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.container a{
+    color: white;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    display:block;
+}
+
+/* Meniu nr.1 */
+div.home a:before{
+    right: 55px;
+    bottom: 20px;
+    position: absolute;
+    opacity: 1;
+    width: 90%;
+    height: 30px;
+    content: '';
+    transition: 0.4s;
+    background: red;
+    transform: scaleX(0);
+}
+
+div.home a:hover:before{
+    opacity: 1;
+    width: 0px;
+    background: red; 
+    transform: scaleX(1);
+}
+
+
+div.about a:before{
+    right: 50px;
+    bottom: 20px;
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 30px;
+    content: '';
+    transition: 0.4s;
+    background: red;
+    transform: scaleX(0);
+}
+
+div.about a:hover:before{
+    opacity: 1;
+    width: 0px;
+    background: red; 
+    transform: scaleX(1);
+}
+
+div.contacts a:before{
+    right: 30px;
+    bottom: 20px;
+    position: absolute;
+    opacity: 1;
+    width: 140%;
+    height: 30px;
+    content: '';
+    transition: 0.4s;
+    background: red;
+    transform: scaleX(0);
+}
+
+div.contacts a:hover:before{
+    opacity: 1;
+    width: 0px;
+    background: red; 
+    transform: scaleX(1);  
+}
+
+div.faq a:before{
+    right: 70px;
+    bottom: 20px;
+    position: absolute;
+    opacity: 1;
+    width: 60%;
+    height: 30px;
+    content: '';
+    transition: 0.4s;
+    background: red;
+    transform: scaleX(0);
+}
+
+div.faq a:hover:before{
+    opacity: 1;
+    width: 0px;
+    background: red; 
+    transform: scaleX(1);  
+}
+
+div.home a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    transform: translateY(-20px) translateX(-55px);
+    background: red;
+}
+
+div.home a:hover:after{
+    opacity: 1;
+    width: 44%;
+}
+
+div.about a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    transform: translateY(-20px) translateX(-53px);
+    background: red;
+}
+
+div.about a:hover:after{
+    opacity: 1;
+    width: 48%;
+}
+
+div.contacts a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.4s;
+    transition-delay: 0.3s;
+    transform: translateY(-20px) translateX(-30px);
+    background: red;
+}
+
+div.contacts a:hover:after{
+    opacity: 1;
+    width: 70%;
+}
+
+div.faq a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.3s;
+    transition-delay: 0.2s;
+    transform: translateY(-20px) translateX(-70px);
+    background: red;
+}
+
+div.faq a:hover:after{
+    opacity: 1;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+/* Meniu nr.2 */
+div.container2 a:before{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.container2 a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.container2 a:hover:after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+    background: orange;
+}
+
+div.container2 a:hover:before{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+    background: orange;
+}
+
+
+
+
+
+
+/* Meniu nr.3 */
+div.container3 a:before{
+    top: 0px;
+    transform: translateY(10px);
+    opacity: 1;
+    background: palegreen;
+    content: "";
+    transition: all 0.3s;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+div.container3 a:after{
+    bottom: 0px;
+    transform: translateY(-10px);
+    opacity: 1;
+    background:  rgb(230, 176, 126);
+    content: "";
+    transition: all 0.3s;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+div.container3 a:hover:before {
+    opacity: 1;
+    transform: translateY(0px) translateX(-10px)
+}
+
+div.container3 a:hover:after{
+    opacity: 1;
+    transform: translateY(0px) translateX(10px)
+}
+
+
+
+
+
+
+/* Meniu nr.4 */
+div.container4 a:before{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.3s;
+}
+
+div.container4 a:after{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 3px;
+    content: '';
+    transition: all 0.3s;
+}
+
+div.container4 a:hover:after{
+    opacity: 1;
+    width: 100%;
+    background: red;
+}
+
+div.container4 a:hover:before{
+    opacity: 1;
+    width: 100%;
+    background: #FFF;
+}
+
+
+
+
+
+
+
+
